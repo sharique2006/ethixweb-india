@@ -50,7 +50,7 @@ export function SiteHeader() {
           onClick={closeMenu}
         >
           <img
-            src="/images/ethixweb-ind.png"
+            src="/images/ethixweb-ind.webp"
             alt="ETHIXWEB IND"
             className="site-logo"
             width={270}
@@ -131,11 +131,11 @@ export function SiteFooter() {
             aria-label="Ethixweb home"
           >
             <img
-              src="/ethixweb-logo.svg"
-              alt="ETHIXWEB"
+              src="/images/ethixweb-ind.webp"
+              alt="ETHIXWEB IND"
               className="site-logo"
               width={270}
-              height={52}
+              height={60}
             />
           </Link>
 

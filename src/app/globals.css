@@ -3579,7 +3579,7 @@ img {
       rgba(16, 9, 12, 0.42),
       rgba(16, 9, 12, 0.62)
     ),
-    url("/images/web-background.png");
+    url("/images/web-background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3597,7 +3597,7 @@ img {
       rgba(12, 5, 8, 0.62),
       rgba(12, 5, 8, 0.68)
     ),
-    url("/images/web-background.png");
+    url("/images/web-background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
