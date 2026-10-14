@@ -324,3 +324,24 @@ The project demonstrates an approach to combining:
 - Deployment preparation and performance measurement.
 
 The final submission should include the public GitHub repository, verified live URL, PageSpeed Insights screenshots, and any requested demo admin credentials shared securely.
+
+## Lighthouse Performance
+
+The deployed website was tested using Google PageSpeed Insights on October 14, 2026.
+
+| Category | Mobile | Desktop |
+|---|---:|---:|
+| Performance | 95 | 100 |
+| Accessibility | 100 | 100 |
+| Best Practices | 100 | 100 |
+| SEO | 100 | 100 |
+
+### Performance optimizations
+
+- Converted the hero background and logo images from PNG to WebP to reduce image transfer size.
+- Resized images to better match their displayed dimensions.
+- Optimized font loading using Next.js font optimization with `next/font`.
+- Used a lightweight, responsive Next.js App Router implementation.
+- Verified the production build with `npm run build`.
+
+**Measurement note:** These are Lighthouse lab scores from PageSpeed Insights for the deployed website. Results can vary between test runs and devices. Lighthouse scores are not the same as real-user Core Web Vitals measurements.
