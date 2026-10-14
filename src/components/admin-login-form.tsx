@@ -1,0 +1,5 @@
+"use client";
+import { FormEvent,useState } from "react";
+export function AdminLoginForm(){const [error,setError]=useState("");const [busy,setBusy]=useState(false);
+ async function submit(e:FormEvent<HTMLFormElement>){e.preventDefault();setBusy(true);setError("");const data=Object.fromEntries(new FormData(e.currentTarget).entries());try{const r=await fetch("/api/admin/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});const b=await r.json();if(!r.ok)throw new Error(b.error||"Unable to sign in");window.location.href="/admin";}catch(e){setError(e instanceof Error?e.message:"Unable to sign in");}finally{setBusy(false)}}
+ return <form onSubmit={submit}><div className="field"><label htmlFor="email">Admin email</label><input id="email" name="email" type="email" autoComplete="username" required/></div><div className="field"><label htmlFor="password">Password</label><input id="password" name="password" type="password" autoComplete="current-password" required/></div><button className="button" disabled={busy}>{busy?"Signing in…":"Sign in securely"}</button>{error&&<p className="form-status" role="alert">{error}</p>}</form>}

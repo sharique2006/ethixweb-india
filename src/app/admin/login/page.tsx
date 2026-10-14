@@ -1,0 +1,2 @@
+import { AdminLoginForm } from "@/components/admin-login-form";
+export default function AdminLogin(){return <main className="admin-wrap"><div className="container"><div className="admin-card"><div className="eyebrow">Private workspace</div><h1 style={{fontFamily:"Manrope",fontSize:32,letterSpacing:-1}}>Lead management</h1><p style={{fontSize:13,color:"var(--muted)",lineHeight:1.7}}>Sign in with your authorised Supabase user to review incoming enquiries.</p><AdminLoginForm/></div></div></main>}
