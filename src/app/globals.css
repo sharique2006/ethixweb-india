@@ -1,6 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
-
+ 
 /* ===== Theme variables ===== */
 
 :root {
@@ -2257,7 +2256,7 @@ img {
 .original-process-card h3 {
   margin: 0 0 12px;
   color: #f3e6e4;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: 17px;
 }
 
